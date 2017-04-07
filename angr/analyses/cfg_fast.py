@@ -1206,7 +1206,7 @@ class CFGFast(ForwardAnalysis, CFGBase):    # pylint: disable=abstract-method
                     self._insert_entry(job)
                     self._jobs_to_analyze_per_function[target_func_addr].add(job)
 
-            if self._entries:
+            if self._job_info_list:
                 return
 
         if self._force_complete_scan:
